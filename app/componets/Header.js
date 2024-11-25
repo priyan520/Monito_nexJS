@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useState } from 'react';
-import { MdDarkMode } from "react-icons/md";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

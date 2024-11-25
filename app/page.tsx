@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "./componets/Header";
 import Hero from "./componets/Hero";
 import First_buy from "./componets/First_buy";
