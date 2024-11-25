@@ -2,20 +2,255 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* dosis-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/dosis-v32-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/dosis-v32-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/dosis-v32-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/dosis-v32-latin-regular.woff") format("woff"),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url("/fonts/dosis-v32-latin-regular.ttf") format("truetype"),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url("/fonts/dosis-v32-latin-regular.svg#Dosis") format("svg"); /* Legacy iOS */
+}
+/* dosis-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/dosis-v32-latin-500.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/dosis-v32-latin-500.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/dosis-v32-latin-500.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/dosis-v32-latin-500.woff") format("woff"),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url("/fonts/dosis-v32-latin-500.ttf") format("truetype"),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url("/fonts/dosis-v32-latin-500.svg#Dosis") format("svg"); /* Legacy iOS */
+}
+/* dosis-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/dosis-v32-latin-600.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/dosis-v32-latin-600.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/dosis-v32-latin-600.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/dosis-v32-latin-600.woff") format("woff"),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url("/fonts/dosis-v32-latin-600.ttf") format("truetype"),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url("/fonts/dosis-v32-latin-600.svg#Dosis") format("svg"); /* Legacy iOS */
+}
+/* dosis-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/dosis-v32-latin-700.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/dosis-v32-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/dosis-v32-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/dosis-v32-latin-700.woff") format("woff"),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url("/fonts/dosis-v32-latin-700.ttf") format("truetype"),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url("/fonts/dosis-v32-latin-700.svg#Dosis") format("svg"); /* Legacy iOS */
+}
+/* dosis-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/dosis-v32-latin-800.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/dosis-v32-latin-800.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/dosis-v32-latin-800.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/dosis-v32-latin-800.woff") format("woff"),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url("/fonts/dosis-v32-latin-800.ttf") format("truetype"),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url("/fonts/dosis-v32-latin-800.svg#Dosis") format("svg"); /* Legacy iOS */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/poppins-v21-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/poppins-v21-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/poppins-v21-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/poppins-v21-latin-regular.woff") format("woff"),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url("/fonts/poppins-v21-latin-regular.ttf") format("truetype"),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url("/fonts/poppins-v21-latin-regular.svg#Poppins") format("svg"); /* Legacy iOS */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/poppins-v21-latin-500.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/poppins-v21-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/poppins-v21-latin-500.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/poppins-v21-latin-500.woff") format("woff"),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url("/fonts/poppins-v21-latin-500.ttf") format("truetype"),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url("/fonts/poppins-v21-latin-500.svg#Poppins") format("svg"); /* Legacy iOS */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/poppins-v21-latin-600.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/poppins-v21-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/poppins-v21-latin-600.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/poppins-v21-latin-600.woff") format("woff"),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url("/fonts/poppins-v21-latin-600.ttf") format("truetype"),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url("/fonts/poppins-v21-latin-600.svg#Poppins") format("svg"); /* Legacy iOS */
+}
+
+
+* {
+  font-family: "Poppins";
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Dosis";
+}
+
+.map {
+  background-image: url("/image/Group 79.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.bg_with_out_text {
+  font-weight: bold; /* Make the text bold for better stroke visibility */
+  color: transparent; /* Makes the text fill transparent */
+  -webkit-text-stroke: 2px #333237; /* Adds a black border with 2px width */
+  text-stroke: 2px black; /* Standard property for future support */
+}
+
+/* Add this custom CSS for unique hover effect */
+img {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #fe704b;
+  border-radius: 20px;
+  width: 0%;
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+img:hover::after {
+  width: 100%;
+}
+
+.float-img {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.float-img {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown2 {
+  0%, 100% {
+    transform: translateY(-10);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+
+.float-img2 {
+  animation: floatUpDown2 3s ease-in-out infinite;
+}
+
+.sub_box {
+  position: relative;
+}
+
+.hover .sub_box::before,
+.hover .sub_box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 112, 75, 0.2);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.hover .sub_box::after {
+  background-color: rgba(255, 112, 75, 0.2);
+  z-index: -1;
+}
+
+.hover .sub_box:hover::before,
+.hover .sub_box:hover::after {
+  opacity: 1;
+  border-radius: 20px;
 }
