@@ -7,7 +7,7 @@ const Special = () => {
         <div className="container_custom">
             <div className="con flex xl:justify-end items-center  flex-col">
                 <div className="p_1">
-                  <img src="image/image 142.png" className='xl:absolute xl:left-[-38px] xl:top-[200px] max-w-full duration-300 hover:brightness-90' alt="" />
+                  <img src="image/image 142.png" className='xl:absolute xl:left-[-38px] xl:top-[200px] max-w-full duration-300 hover:brightness-90 w-[777px]' alt="" />
                 </div>
                 <div className="p_2 xl:mt-0 md:mt-[100px] mt-[50px] md:px-0 px-[20px]">
                     <img src="image/Special Hot Deals.png" className='mx-auto max-w-full' alt="" />

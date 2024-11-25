@@ -45,7 +45,7 @@ const About_us = () => {
                     </div>
                     <div className="p_2">
                         <div className="img">
-                            <img src="/image/story-img1 1.png" alt=""  className='mx-auto hover:scale-105 duration-300'/>
+                            <img src="/image/story-img1 1.png" alt=""  className='mx-auto hover:scale-105 duration-300 w-[600px]'/>
                         </div>
                     </div>
                 </div>

@@ -15,13 +15,13 @@ const Footer = () => {
             <img
               src="/image/image 42.png"
               alt=""
-              className="mx-auto xl:mb-[-150px] xl:w-auto w-[80%] lg:mb-[-100px] mb-[-80px] transition-all  hover:brightness-125"
+              className="mx-auto xl:mb-[-150px] xl:w-[1170px] w-[820px] lg:mb-[-100px] mb-[-80px] transition-all  hover:brightness-125"
             />
           </div>
           <div className="main_footer md:flex py-[110px] bg-[#FFF5ED] lg:pl-[70px] justify-between lg:pr-[31px] px-[20px]">
             <div className="p_1">
               <div className="logo">
-                <img src="/image/logo.png" alt="" />
+                <img src="/image/logo.png" alt="" className="w-[115px]" />
               </div>
               <div className="p mt-[20px]">
                 <p className="text-[12px] leading-[26px] font-[400] w-[220px] text-[#70717B]">
@@ -138,7 +138,7 @@ const Footer = () => {
             <div className="p_bg absolute bottom-0 right-0 z-10 hover:right-[50px] hover:scale-110 transition-all duration-500 ease-in-out">
               <img
                 src="/image/image 134.png"
-                className="hover:brightness-90 hover:rotate-[-5deg]"
+                className="hover:brightness-[85%] hover:rotate-[-5deg] w-[238px]"
                 alt=""
               />
             </div>

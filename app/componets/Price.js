@@ -7,15 +7,17 @@ const Price = () => {
 
     const [price , setPrice] = useState(["32" , "49" , "99"]);
     const [time , setTime] = useState("Hour");
+    const [bg, setBg] = useState(["bg-[linear-gradient(275.83deg,_#FE704B_39.77%,_#BE3F45_114.02%)]" , "bg-[#272727]"])
 
-
-    function changePrice(){
-        if(price[0] == "32"){
+    function changePrice(p_num){
+        if(p_num == "p_2"){  
             setPrice(["43" , "60" , "150"]);
             setTime("Day");
+            setBg(["bg-[#272727]", "bg-[linear-gradient(275.83deg,_#FE704B_39.77%,_#BE3F45_114.02%)]"]);
         }else{
             setPrice(["32" , "49" , "99"]);
             setTime("Hour");
+            setBg(["bg-[linear-gradient(275.83deg,_#FE704B_39.77%,_#BE3F45_114.02%)]", "bg-[#272727]"]);
         }
     }
     
@@ -48,20 +50,18 @@ const Price = () => {
           <div className="contant">
             <div className="choose flex justify-center mt-[88px]">
               <div
-                className="p_1 py-[10px] px-[45px] text-white font-[500] leading-[20px]"
+                className={"p_1 py-[10px] px-[45px] text-white font-[500] leading-[20px] "+bg[0]}
                 style={{
-                  background:
-                    "linear-gradient(275.83deg, #FE704B 39.77%, #BE3F45 114.02%)",
                   borderRadius: "50px 0px 0px 50px",
                 }}
-                onClick={changePrice}
+                onClick={() => changePrice("p_1")}
               >
                 Per Month
               </div>
               <div
-                className="p_2 py-[10px] px-[45px] bg-[#272727] text-white font-[500] leading-[20px]"
+                className={"p_2 py-[10px] px-[45px] text-white font-[500] leading-[20px] "+bg[1]}
                 style={{ borderRadius: "0px 50px 50px 0px" }}
-                onClick={changePrice}
+                onClick={() => changePrice("p_2")}
               >
                 Per Hour
               </div>

@@ -41,13 +41,13 @@ const Hero = () => {
                 <div className="p_2 items-center flex lg:gap-[20px] gap-[10px]">
                   <div className="line h-[50px] w-[4px] bg-[#FF583D] rounded-full"></div>
                   <div className="box">
-                    <div className="p_1 flex items-center lg:gap-2 gap-1">
+                    <div className="p_1 flex items-center lg:gap-4 gap-1">
                       <div className="img flex">
-                        <img src="/image/Ellipse 6.png" alt="" className="hover:scale-105 duration-300" />
+                        <img src="/image/Ellipse 6.png" alt="" className="hover:scale-105 duration-300 w-[40px]" />
                         <img
                           src="/image/Ellipse 7.png"
                           alt=""
-                          className="ml-[-10px] hover:scale-105 duration-300"
+                          className="ml-[-7px] hover:scale-105 duration-300 w-[40px]"
                         />
                       </div>
                       <div className="content">
@@ -79,31 +79,31 @@ const Hero = () => {
                 <div className="img">
                   <img
                     src="/image/Ellipse 9.png"
-                    className="absolute md:w-auto hover:scale-110 float-img2 w-[14%] 2xl:top-[11.57%] xl:top-[17%] xl:right-[13.91%] lg:top-[18%] lg:right-[5%]  right-[12%] top-[12%]"
+                    className="absolute hover:scale-110 float-img2 md:!w-[80px] w-[60px] 2xl:top-[11.57%] xl:top-[17%] xl:right-[13.91%] lg:top-[18%] lg:right-[5%]  right-[12%] top-[12%]"
                     width={"80px"}
                     alt=""
                   />
                   <img
                     src="/image/Ellipse 8.png"
-                    className="absolute md:w-auto hover:scale-110 float-img w-[14%]  2xl:top-[34.91%] lg:top-[50%] top-[30%] right-[7.81%]"
-                    width={"86px"}
+                    className="absolute hover:scale-110 float-img md:!w-[86px] w-[66px]  2xl:top-[34.91%] lg:top-[50%] top-[30%] right-[7.81%]"
+                    width={"86px"} 
                     alt=""
                   />
                   <img
                     src="/image/Ellipse 11.png"
-                    className="absolute md:w-auto hover:scale-110 float-img2 w-[14%] 2xl:top-[58.15%] lg:top-[80%] right-[5.10%] top-[50%]"
+                    className="absolute hover:scale-110 md:!w-[52px] w-[32px] float-img2 2xl:top-[58.15%] lg:top-[80%] right-[5.10%] top-[50%]"
                     width={"52px"}
                     alt=""
                   />
                   <img
-                    src="/image/Ellipse 12.png"
-                    className="absolute md:w-auto hover:scale-110 float-img w-[14%] top-[16.67%] 3xl:right-[35%] 2xl:right-[42.08%] xl:right-[57%] lg:right-[65%] md:right-[40%] md:left-auto left-[5%]"
+                    src="/image/Ellipse 12 (1).png"
+                    className="absolute hover:scale-110 md:!w-[36px] w-[26px] float-img  top-[16.67%] 3xl:right-[35%] 2xl:right-[42.08%] xl:right-[57%] lg:right-[65%] md:right-[40%] md:left-auto left-[5%]"
                     width={"36px"}
                     alt=""
                   />
                   <img
                     src="/image/Ellipse 10.png"
-                    className="absolute md:w-auto hover:scale-110 float-img2 w-[14%] top-[36.39%] 3xl:right-[32%] 2xl:right-[40.83%] xl:right-[55%] lg:right-[53%] md:right-[35%] md:left-auto left-[10%] "
+                    className="absolute hover:scale-110 float-img2 md:!w-[58px] w-[38px] top-[36.39%] 3xl:right-[32%] 2xl:right-[40.83%] xl:right-[55%] lg:right-[53%] md:right-[35%] md:left-auto left-[10%] "
                     width={"57px"}
                     alt=""
                   />

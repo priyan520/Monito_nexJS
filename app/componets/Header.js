@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const Header = () => {
           {/* Logo */}
           <div className="p_1">
             <div className="logo">
-              <img src="image/logo.png" alt="Logo" />
+              <img src="image/logo.png" className='w-[115px]' alt="Logo" />
             </div>
           </div>
 
@@ -47,49 +48,55 @@ const Header = () => {
   <li>
     <a
       href=""
-      className="relative text-[#808080] lg:mr-[28px] lg:py-0 py-3 lg:text-[16px] text-[18px] block text-start leading-[24px] border-b border-black lg:border-none hover:text-black hover:scale-105 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
+      className="relative flex items-center justify-between lg:block pr-4 lg:pr-0  text-[#808080] lg:mr-[28px] lg:py-0 py-3 lg:text-[16px] text-[18px] text-start leading-[24px] border-b border-black lg:border-none hover:text-black hover:scale-105 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
     >
-      Home
+      <span>Home</span>
+      <FaArrowRightLong className='block lg:hidden' />
     </a>
   </li>
   <li>
     <a
       href=""
-      className="relative text-[#808080] lg:mr-[28px] lg:py-0 py-3 lg:text-[16px] text-[18px] block text-start leading-[24px] border-b border-black lg:border-none hover:text-black hover:scale-105 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
+      className="relative flex item-center justify-between lg:block pr-4 lg:pr-0  text-[#808080] lg:mr-[28px] lg:py-0 py-3 lg:text-[16px] text-[18px] text-start leading-[24px] border-b border-black lg:border-none hover:text-black hover:scale-105 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
     >
-      About Us
+      <span>About Us</span>
+      <FaArrowRightLong className='block lg:hidden' />
     </a>
   </li>
   <li>
     <a
       href=""
-      className="relative text-[#808080] lg:mr-[28px] lg:py-0 py-3 lg:text-[16px] text-[18px] block text-start leading-[24px] border-b border-black lg:border-none hover:text-black hover:scale-105 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
+      className="relative flex item-center justify-between lg:block pr-4 lg:pr-0  text-[#808080] lg:mr-[28px] lg:py-0 py-3 lg:text-[16px] text-[18px] text-start leading-[24px] border-b border-black lg:border-none hover:text-black hover:scale-105 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
     >
-      Services
+      <span>Services</span>
+      <FaArrowRightLong className='block lg:hidden' />
     </a>
   </li>
   <li>
     <a
       href=""
-      className="relative text-[#808080] lg:mr-[28px] lg:py-0 py-3 lg:text-[16px] text-[18px] block text-start leading-[24px] border-b border-black lg:border-none hover:text-black hover:scale-105 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
+      className="relative flex item-center justify-between lg:block pr-4 lg:pr-0  text-[#808080] lg:mr-[28px] lg:py-0 py-3 lg:text-[16px] text-[18px] text-start leading-[24px] border-b border-black lg:border-none hover:text-black hover:scale-105 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
     >
-      Pricing
+      <span>Pricing</span>
+      <FaArrowRightLong className='block lg:hidden' />
     </a>
   </li>
   <li>
     <a
       href=""
-      className="relative text-[#808080] lg:mr-[28px] lg:py-0 py-3 lg:text-[16px] text-[18px] block text-start leading-[24px] border-b border-black lg:border-none hover:text-black hover:scale-105 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
+      className="relative flex item-center justify-between lg:block pr-4 lg:pr-0  text-[#808080] lg:mr-[28px] lg:py-0 py-3 lg:text-[16px] text-[18px] text-start leading-[24px] border-b border-black lg:border-none hover:text-black hover:scale-105 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
     >
-      Gallery
+      <span>Gallery</span>
+      <FaArrowRightLong className='block lg:hidden' />
     </a>
   </li>
   <li>
     <a
       href=""
-      className="relative text-[#808080] lg:py-0 py-3 lg:text-[16px] text-[18px] block text-start leading-[24px] border-b border-black lg:border-none hover:text-black hover:scale-105 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
+      className="relative flex item-center justify-between lg:block pr-4 lg:pr-0  text-[#808080] lg:py-0 py-3 lg:text-[16px] text-[18px] text-start leading-[24px] border-b border-black lg:border-none hover:text-black hover:scale-105 transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
     >
-      Contact
+      <span>Contact</span>
+      <FaArrowRightLong className='block lg:hidden' />
     </a>
   </li>
 </ul>
