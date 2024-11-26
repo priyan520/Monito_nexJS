@@ -14,16 +14,47 @@ const PetCare = () => {
       setBtn2Css("text-[#FF9850]");
       setBtn3Css("text-[#FF9850]");
       setDisImg(["block" , "block"]);
+      document.getElementById("gallary").style.transform = "translate(100%)"
+      document.getElementById("gallary").style.display = "none"
+      
+      setTimeout(() => {
+        document.getElementById("gallary").style.display = "block"
+      }, 250);
+
+      setTimeout(() => {
+        document.getElementById("gallary").style.transform = "translate(0%)"
+      }, 500);
+
     }else if(buttonId == "Bathed"){
       setBtn1Css("text-[#FF9850]");
       setBtn2Css("bg-[#FE704B] text-white");
       setBtn3Css("text-[#FF9850]");
       setDisImg(["block" , "hidden"]);
+      document.getElementById("gallary").style.transform = "translate(100%)"
+      document.getElementById("gallary").style.display = "none"
+      
+      setTimeout(() => {
+        document.getElementById("gallary").style.display = "block"
+      }, 250);
+
+      setTimeout(() => {
+        document.getElementById("gallary").style.transform = "translate(0%)"
+      }, 500);
     }else{
       setBtn1Css("text-[#FF9850]");
       setBtn2Css("text-[#FF9850]");
       setBtn3Css("bg-[#FE704B] text-white");
       setDisImg(["hidden" , "block"]);
+      document.getElementById("gallary").style.transform = "translate(100%)"
+      document.getElementById("gallary").style.display = "none"
+      
+      setTimeout(() => {
+        document.getElementById("gallary").style.display = "block"
+      }, 250);
+
+      setTimeout(() => {
+        document.getElementById("gallary").style.transform = "translate(0%)"
+      }, 500);
     }
 
   };
@@ -100,7 +131,8 @@ const PetCare = () => {
               </div>
             </div>
 
-            <div className="gallary px-5">
+            <div className="min-h-[600px]">
+            <div className="gallary px-5 duration-500" id="gallary">
               <div className={"box_1 flex gap-[40px] justify-center flex-wrap "+disImg[0]}>
                 <img
                   src="/image/Rectangle 20.png"
@@ -135,6 +167,7 @@ const PetCare = () => {
                   className="rounded-[20px] lg:w-[370px] md:w-[300px] w-full hover:scale-110"
                 />
               </div>
+            </div>
             </div>
           </div>
         </div>

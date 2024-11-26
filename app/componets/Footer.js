@@ -11,12 +11,12 @@ const Footer = () => {
     <section className="footer relative overflow-hidden">
       <div className="container_custom">
         <div className="con">
-          <div className="dog_image hidden md:block">
+          <div className="dog_image">
             <img
               src="/image/image 42.png"
               alt=""
-              className="mx-auto xl:mb-[-150px] xl:w-[1170px] w-[820px] lg:mb-[-100px] mb-[-80px] transition-all  hover:brightness-125"
-            />
+              className="mx-auto xl:mb-[-150px] xl:w-[1170px] md:w-[820px] lg:mb-[-100px] md:mb-[-100px] xs:mb-[-50px] mb-[-40px] transition-all  hover:brightness-125"
+            /> 
           </div>
           <div className="main_footer md:flex py-[110px] bg-[#FFF5ED] lg:pl-[70px] justify-between lg:pr-[31px] px-[20px]">
             <div className="p_1">
@@ -99,10 +99,11 @@ const Footer = () => {
                   className="p-4 pr-[105px] rounded-[15px]"
                   style={{ border: "1px solid #FE704B" }}
                 />
+                <br className="md:hidden " />
                 <button>
                   <a
                     href=""
-                    className="py-[16px] md:mt-0 mt-4 px-[28px] text-white rounded-full text-[12px] font-[600] leading-[15px] mx-auto block bg-[#FE704B]"
+                    className="py-[16px] md:mt-0 mt-3 px-[28px] text-white rounded-full text-[12px] font-[600] leading-[15px] mx-auto block bg-[#FE704B]"
                   >
                     Subscribe
                   </a>

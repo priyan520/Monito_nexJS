@@ -41,7 +41,7 @@ const Hero = () => {
                 <div className="p_2 items-center flex lg:gap-[20px] gap-[10px]">
                   <div className="line h-[50px] w-[4px] bg-[#FF583D] rounded-full"></div>
                   <div className="box">
-                    <div className="p_1 flex items-center lg:gap-4 gap-1">
+                    <div className="p_1 flex items-center lg:gap-4 gap-4">
                       <div className="img flex">
                         <img src="/image/Ellipse 6.png" alt="" className="hover:scale-105 duration-300 w-[40px]" />
                         <img
